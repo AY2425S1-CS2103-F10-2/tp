@@ -7,6 +7,7 @@
       "headings": {
         "about-us": "About Us",
         "project-team": "Project team",
+        "liau-zhan-yi": "Liau Zhan Yi",
         "andrew-teoh": "Andrew Teoh",
         "abdulrahman-al-rammah": "Abdulrahman Al Rammah",
         "rayner-lim-fang-yuh": "Rayner Lim Fang Yuh",
@@ -153,6 +154,14 @@
     {
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
+      "headings": {
+        "project-addressbook-level-3": "Project: AddressBook Level 3"
+      },
+      "headingKeywords": {}
+    },
+    {
+      "src": "team/liauzhanyi.md",
+      "title": "Liau Zhan Yi's Project Portfolio Page",
       "headings": {
         "project-addressbook-level-3": "Project: AddressBook Level 3"
       },
