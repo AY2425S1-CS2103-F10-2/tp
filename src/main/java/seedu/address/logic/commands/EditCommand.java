@@ -97,8 +97,10 @@ public class EditCommand extends Command {
 
         Name updatedName = editPersonDescriptor.getName().orElse(personToEdit.getName());
         Phone updatedPhone = editPersonDescriptor.getPhone().orElse(personToEdit.getPhone());
-        Email updatedEmail = editPersonDescriptor.getEmail().orElse(personToEdit.getEmail());
-        Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
+        Optional<Email> updatedEmail = Optional.of(editPersonDescriptor.getEmail()
+                .orElse(personToEdit.getEmail().get()));
+        Optional<Address> updatedAddress = Optional.of(editPersonDescriptor.getAddress()
+                .orElse(personToEdit.getAddress().get()));
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
 
         return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedTags);
@@ -135,8 +137,8 @@ public class EditCommand extends Command {
     public static class EditPersonDescriptor {
         private Name name;
         private Phone phone;
-        private Email email;
-        private Address address;
+        private Optional<Email> email;
+        private Optional<Address> address;
         private Set<Tag> tags;
 
         public EditPersonDescriptor() {}
@@ -176,20 +178,20 @@ public class EditCommand extends Command {
             return Optional.ofNullable(phone);
         }
 
-        public void setEmail(Email email) {
+        public void setEmail(Optional<Email> email) {
             this.email = email;
         }
 
         public Optional<Email> getEmail() {
-            return Optional.ofNullable(email);
+            return email;
         }
 
-        public void setAddress(Address address) {
+        public void setAddress(Optional<Address> address) {
             this.address = address;
         }
 
         public Optional<Address> getAddress() {
-            return Optional.ofNullable(address);
+            return address;
         }
 
         /**
