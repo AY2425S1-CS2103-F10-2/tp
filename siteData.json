@@ -52,7 +52,8 @@
         "common-classes": "Common classes",
         "implementation": "Implementation",
         "proposed-undo-redo-feature": "[Proposed] Undo/redo feature",
-        "proposed-data-archiving": "[Proposed] Data archiving",
+        "proposed-visit-history": "[Proposed] Visit History",
+        "proposed-emergency-contact-expansion": "[Proposed] Emergency Contact Expansion",
         "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
         "appendix-requirements": "Appendix: Requirements",
         "product-scope": "Product scope",
@@ -63,7 +64,8 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "deleting-a-person-or-persons": "Deleting a person or persons",
-        "saving-data": "Saving data"
+        "saving-data": "Saving data",
+        "sorting-of-person-list": "Sorting of person list"
       },
       "headingKeywords": {}
     },
